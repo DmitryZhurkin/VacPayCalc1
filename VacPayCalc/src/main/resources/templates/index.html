@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+	     <div>
+		<h1>Vacation pay calculator</h1>
+	     </div>		
+         <form th:action="@{calculate}" th:object="${calculate}" method="post">
+	      <div>
+		<label>Average Salary</label>
+		<input type="text" id="averageSalary" class="form-control" name="averageSalary" >	
+	      </div>
+	      <div>
+		<label>Count Vacation Days</label>
+		<input type="text" id="countVacationDays" class="form-control" name="countVacationDays" >
+	      </div>
+		</br>
+	       <div>
+		<input type="submit" value="calculate" />
+	       </div>
+	   </form>
+	</div>
+</div>
+</body>
+</html>
