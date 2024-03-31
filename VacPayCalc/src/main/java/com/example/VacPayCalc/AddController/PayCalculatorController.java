@@ -21,7 +21,7 @@ public class PayCalculatorController {
 	
 	@PostMapping("/calculate")
 	public String calcForm(@ModelAttribute PayCalculator payCalculator, BindingResult result,Model model) {
-		model.addAttribute("payCalulator", payCalculator);
+		model.addAttribute("payCalculator", payCalculator);
 		return "calculate";
 	}
 }
